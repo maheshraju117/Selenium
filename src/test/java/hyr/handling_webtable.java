@@ -16,6 +16,8 @@ public class handling_webtable {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get("https://www.techlistic.com/p/demo-selenium-practice.html");
 		
+		//git testing
+		
 		// how many rows in atable
 		int rows =driver.findElementsByXPath("//table[@class='tsc_table_s13']/tbody/tr").size();
 		
