@@ -27,7 +27,7 @@ public class broken_links {
 		for(WebElement link:links) {
 			String actuallink = link.getAttribute("href");
 			if(actuallink==null || actuallink.isEmpty()) {
-				System.out.println(actuallink+"  is a broken link");
+				System.out.println(actuallink+"  is not a link");
 			}
 			URL ul = new URL(actuallink);
 			HttpURLConnection huc = (HttpURLConnection) ul.openConnection();
